@@ -30,6 +30,4 @@ pip3 install neovim
     ```
     Run: :PlugInstall inside Neovim
     ```
-   
-## Dependencies
-TODO
+  
