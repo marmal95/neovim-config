@@ -8,6 +8,9 @@ set secure
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set smarttab
+set smartindent
+set autoindent
 set expandtab
 set number
 set relativenumber
@@ -17,8 +20,6 @@ set incsearch
 set cursorline
 set nowrap
 set updatetime=100
-
-" Set proper path for file finding
 set path+=**
 
 map     <F1> :NERDTreeToggle<CR>
@@ -35,10 +36,8 @@ map     <C-q> :tabprevious<CR>
 map     <bar> :vsplit<CR>
 nmap     _    :split<CR>
 
-nmap    <C-]> g<C-]>
-nmap    t<C-]> :call TSelectOpenNewTab(expand("<cword>"))<CR>
-nmap    v<C-]> :call TSelectOpenVerSplit(expand("<cword>"))<CR>
-nmap    s<C-]> :call TSelectOpenHorSplit(expand("<cword>"))<CR>
+nmap    <leader>fs :call FlipSource()<CR>
+nmap    <leader>l :Limelight!!<CR>
 
 filetype plugin indent on
 highlight ColorColumn ctermbg=darkgray

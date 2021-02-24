@@ -3,8 +3,8 @@ call deoplete#custom#option('sources',
             \ '_': ['~', 'buffer', 'dictionary', 'file', 'member', 'omni', 'file', 'jedi']
             \ })
 
-map     <leader>b :Denite buffer -start-filter -split=horizontal<CR>
-map     <leader>f :Denite file/rec -start-filter -split=horizontal<CR>
+map     <leader>b :Denite buffer -start-filter<CR>
+map     <leader>f :Denite file/rec -start-filter<CR>
 
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
