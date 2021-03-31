@@ -24,8 +24,6 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'zchee/deoplete-jedi'
     Plug 'itblinker/highlighter.vim'
-    Plug 'tpope/vim-dispatch'
-    Plug 'radenling/vim-dispatch-neovim'
     Plug 'Yggdroot/indentLine'
     Plug 'bronson/vim-trailing-whitespace'
     Plug 'junegunn/rainbow_parentheses.vim'
